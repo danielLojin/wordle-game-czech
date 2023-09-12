@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="script.js"></script>
+  </head>
+  <body>
+    <h1 class="heading">Uhádni slovo</h1>
+    <div class="container">
+      <div class="board-container">
+        <div class="row-1 row">
+          <div class="row-1__tile tile"></div>
+          <div class="row-1__tile tile"></div>
+          <div class="row-1__tile tile"></div>
+          <div class="row-1__tile tile"></div>
+          <div class="row-1__tile tile"></div>
+        </div>
+        <div class="row-2 row">
+          <div class="row-2__tile tile"></div>
+          <div class="row-2__tile tile"></div>
+          <div class="row-2__tile tile"></div>
+          <div class="row-2__tile tile"></div>
+          <div class="row-2__tile tile"></div>
+        </div>
+        <div class="row-3 row">
+          <div class="row-3__tile tile"></div>
+          <div class="row-3__tile tile"></div>
+          <div class="row-3__tile tile"></div>
+          <div class="row-3__tile tile"></div>
+          <div class="row-3__tile tile"></div>
+        </div>
+        <div class="row-4 row">
+          <div class="row-4__tile tile"></div>
+          <div class="row-4__tile tile"></div>
+          <div class="row-4__tile tile"></div>
+          <div class="row-4__tile tile"></div>
+          <div class="row-4__tile tile"></div>
+        </div>
+        <div class="row-5 row">
+          <div class="row-5__tile tile"></div>
+          <div class="row-5__tile tile"></div>
+          <div class="row-5__tile tile"></div>
+          <div class="row-5__tile tile"></div>
+          <div class="row-5__tile tile"></div>
+        </div>
+        <div class="row-6 row">
+          <div class="row-6__tile tile"></div>
+          <div class="row-6__tile tile"></div>
+          <div class="row-6__tile tile"></div>
+          <div class="row-6__tile tile"></div>
+          <div class="row-6__tile tile"></div>
+        </div>
+      </div>
+      <div class="input-container">
+        <input type="text" class="input" minlength="5" maxlength="5" />
+        <button class="btn btn-enter">Enter</button>
+      </div>
+    </div>
+    <!-- Pop-up window -->
+    <div class="pop-up hidden">
+      <p class="pop-up__text">slovo není v seznamu</p>
+    </div>
+    <!-- Modal window -->
+    <div class="modal modal__hidden">
+      <p class="modal__text"></p>
+      <div class="btn btn-modal">Reset</div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
